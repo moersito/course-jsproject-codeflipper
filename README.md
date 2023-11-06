@@ -1,7 +1,7 @@
 # course-jsproject-codeflipper
 
-1. Buat file index.html dengan kode berikut;
-
+## 1. Buat file index.html dengan kode berikut;
+```
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -32,9 +32,11 @@
     <script src="app.js"></script>
   </body>
 </html>
+```
 
-2. Buat file app.js dengan kode berikut,
+## 2. Buat file app.js dengan kode berikut,
 
+```
 const colors = ["green", "red", "rgba(133,122,200)", "#f15025"];
 const btn = document.getElementById("btn");
 const color = document.querySelector(".color");
@@ -50,43 +52,47 @@ btn.addEventListener("click", function () {
 function getRandomNumber() {
   return Math.floor(Math.random() * colors.length);
 }
+```
 
-3. Buat file hex.html dengan kode berikut,
+## 3. Buat file hex.html dengan kode berikut,
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Color Flipper || Hex</title>
+```
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Color Flipper || Hex</title>
 
-    <!-- styles -->
-    <link rel="stylesheet" href="styles.css" />
-  </head>
+        <!-- styles -->
+        <link rel="stylesheet" href="styles.css" />
+    </head>
 
-  <body>
-    <nav>
-      <div class="nav-center">
-        <h4>color flipper</h4>
-        <ul class="nav-links">
-          <li><a href="index.html">simple</a></li>
-          <li><a href="hex.html">hex</a></li>
-        </ul>
-      </div>
-    </nav>
-    <main>
-      <div class="container">
-        <h2>background color : <span class="color">#f1f5f8</span></h2>
-        <button class="btn btn-hero" id="btn">click me</button>
-      </div>
-    </main>
-    <!-- javascript -->
-    <script src="hex.js"></script>
-  </body>
-</html>
+    <body>
+        <nav>
+        <div class="nav-center">
+            <h4>color flipper</h4>
+            <ul class="nav-links">
+            <li><a href="index.html">simple</a></li>
+            <li><a href="hex.html">hex</a></li>
+            </ul>
+        </div>
+        </nav>
+        <main>
+        <div class="container">
+            <h2>background color : <span class="color">#f1f5f8</span></h2>
+            <button class="btn btn-hero" id="btn">click me</button>
+        </div>
+        </main>
+        <!-- javascript -->
+        <script src="hex.js"></script>
+    </body>
+    </html>
+```
 
-4. Buat file hex.js dengan kode berikut,
+## 4. Buat file hex.js dengan kode berikut,
 
+```
 const hex = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"];
 const btn = document.getElementById("btn");
 const color = document.querySelector(".color");
@@ -105,9 +111,11 @@ btn.addEventListener("click", function () {
 function getRandomNumber() {
   return Math.floor(Math.random() * hex.length);
 }
+```
 
-5. Buat file style.css dengan kode berikut,
+## 5. Buat file style.css dengan kode berikut,
 
+```
 /*
 =============== 
 Fonts
@@ -342,4 +350,5 @@ main {
   color: var(--clr-white);
   background: var(--clr-black);
 }
+```
 
